@@ -9,15 +9,16 @@ This portfolio is designed to highlight my skills and experiences in software de
 - **Home**: A brief introduction and links to my resume, email, and social profiles.
 - **About Me**: Details about my passion for coding and my journey as a developer.
 - **Education**: A timeline of my academic and professional learning journey.
-- **Skills**: A breakdown of my technical skills with proficiency levels.
-- **Contact**: A form for getting in touch with me.
+- **Skills**: Technologies grouped by programming languages, backend, frontend, tools, database, and concepts.
+- **Contact**: Contact links and a form that prepares an email in your default mail app.
 
 ## Features
 
 - **Responsive Design**: Works seamlessly on devices of all sizes.
 - **Interactive Navigation**: Easy-to-use menu and smooth scrolling between sections.
-- **Skill Progress Bars**: Visual representation of my proficiency levels.
+- **Responsive Skills Cards**: A categorized overview of my technical skills.
 - **Social Media Links**: Quick access to my GitHub, LinkedIn, and other profiles.
+- **Accessible Interactions**: Keyboard-operable navigation, reduced-motion support, and labeled form controls.
 
 ## Technologies Used
 
@@ -25,8 +26,7 @@ This portfolio is designed to highlight my skills and experiences in software de
 - **CSS3**: Styling and layout.
 - **JavaScript**: Adding interactivity and animations.
 - **FontAwesome Icons**: For elegant icons and symbols.
-- **Google Fonts**: For beautiful typography.
-- **Typed.js**: For dynamic text animations.
+- **Custom Typewriter Effect**: Smooth character-by-character role transitions.
 
 ## How to View
 
@@ -35,7 +35,7 @@ To view the portfolio, you can:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/Sunnysingh1231/portfolio-website.git
    ```
 
 2. Open the `index.html` file in your favorite web browser.
@@ -48,7 +48,9 @@ Alternatively, visit the live version of the portfolio [here](https://resplenden
 ├── index.html          # Main HTML file
 ├── index.css           # Styling for the portfolio
 ├── index.js            # JavaScript for interactivity
-├── assets/             # Folder for images and other assets
+├── resume_img_01.png   # Portfolio image
+├── resume_img_011.png  # Home-section image
+├── resume_img_02.jpeg  # About-section image
 └── README.md           # This file
 ```
 

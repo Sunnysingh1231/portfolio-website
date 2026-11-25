@@ -3,97 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SDPortFolio</title>
+    <meta name="description" content="Sunny Dev's portfolio featuring Java, Spring Boot, REST APIs, React, MySQL, and software development skills.">
+    <meta name="theme-color" content="#081b29">
+    <title>Sunny Dev | Developer Portfolio</title>
     <link rel="stylesheet" href="index.css">
-    
 </head>
 <body>
+    <a class="skip_link" href="#main_content">Skip to content</a>
+
     <header class="header">
-        <a href="#" class="logo">Portfolio <span class="animate" style="--i:1;"></span></a>
+        <a href="#home" class="logo">Sunny Dev</a>
 
-        <div>
-            <i class="fa-solid fa-bars" id="menu_icon"></i>
-            <!-- <i class="fa-solid fa-x"></i> -->
-        </div>
+        <button type="button" class="menu_toggle" id="menu_icon" aria-label="Open navigation menu" aria-controls="main_nav" aria-expanded="false">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
+        <nav class="navbar" id="main_nav" aria-label="Main navigation">
+            <a href="#home" class="active" aria-current="page">Home</a>
             <a href="#about">About</a>
             <a href="#education">Education</a>
-            <a href="#skill">Skill</a>
+            <a href="#skill">Skills</a>
             <a href="#contact">Contact</a>
-
-            <span class="active_navbar"></span>
-
         </nav>
     </header>
 
-    <section class="home" id="home">
-        <div class="home-cont">
-            <h1>Hi, I'm <span>Sunny Dev</span></h1>
-            <h3><span id="text"></span></h3>
-            <p>Strong proficiency in Java programming, backend
-                technologies, and agile methodologies.
-                Ability to collaborate with cross-functional teams.
-                Commitment to driving innovation and delivering
-                exceptional results in fast-paced environments
-            </p>
+    <main id="main_content">
+        <section class="home" id="home">
+            <div class="home-cont">
+                <h1>Hi, I'm <span>Sunny Dev</span></h1>
+                <h2 class="home_role">
+                    <span id="text" aria-hidden="true">Java &amp; Spring Boot Developer</span>
+                    <span class="typed-cursor" aria-hidden="true">|</span>
+                    <span class="screen_reader_only" id="home_role_accessible" aria-live="polite">Java &amp; Spring Boot Developer</span>
+                </h2>
+                <p>Fresher Software Developer with knowledge of Java, Spring Boot, JavaScript, React.js, REST APIs, and MySQL, passionate about building responsive web applications and scalable software solutions.</p>
         
-            <div class="btn-box">
-                <a href="mailto:123saktisingh@gmail.com">Hire me</a>
-                <a href="https://wa.me/+918934886808">Let's talk</a>
+                <div class="btn-box">
+                    <a href="mailto:123saktisingh@gmail.com">Hire me</a>
+                    <a href="https://wa.me/918934886808" target="_blank" rel="noopener noreferrer">Let's talk</a>
+                </div>
+                <div class="resume_btn_box">
+                    <a href="https://drive.google.com/file/d/1r5UYIPioA_G05TIvqpizFtX3WUJHijTj/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+                </div>
             </div>
-            <div class="resume_btn_box">
-                <a href="https://drive.google.com/file/d/1r5UYIPioA_G05TIvqpizFtX3WUJHijTj/view?usp=sharing">Resume</a>
+            <nav class="home-sci" aria-label="Social links">
+                <a href="tel:+918934886808" aria-label="Call Sunny"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+                <a href="mailto:123saktisingh@gmail.com" aria-label="Email Sunny"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/sunny-dev-619303254/" target="_blank" rel="noopener noreferrer" aria-label="Sunny on LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://github.com/Sunnysingh1231" target="_blank" rel="noopener noreferrer" aria-label="Sunny on GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+            </nav>
+            <div class="imgHover" aria-hidden="true">
+                <div>
+                    <img src="resume_img_01.png" alt="">
+                </div>
             </div>
-        </div>
-        <div class="home-sci">
-            <a href="https://wa.me/8934886808"><i class="fa-solid fa-phone"></i></a>
-            <a href="mailto:123saktisingh@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/Sunnysingh1231"><i class="fa-brands fa-github"></i></a>
-        </div>
-        <div class="imgHover">
-            <div>
-                <img src="/resume_img_011.png" alt="">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="about" id="about">
-        <h2 class="about_heading">About <span>Me</span></h2>
-        <div class="about_img">
-            <img src="/resume_img_02.jpeg" alt="img">
-            <span class="circle_spen"></span>
+        <section class="about" id="about">
+        <h2 class="about_heading" data-reveal="up">About <span>Me</span></h2>
+        <div class="about_img" data-reveal="left">
+            <img src="resume_img_02.jpeg" alt="Portrait of Sunny Dev">
+            <span class="circle_spin"></span>
         </div>
-        <div class="about_cont">
+        <div class="about_cont" data-reveal="right">
             <h3>Backend Developer</h3>
-            <p><i class="fa-regular fa-hand-point-right"></i> Welcome to my portfolio! I'm Sunny Dev, a passionate and dedicated Java developer eager to embark on an exciting journey in the world of software development. With a solid foundation in Java and a thirst for knowledge, I strive to create efficient and innovative solutions that make a positive impact.</p>
+            <p><i class="fa-regular fa-hand-point-right"></i> Welcome to my portfolio! I'm Sunny Dev, a Computer Science Engineering student and Java developer. I enjoy solving problems and building reliable software, with a focus on backend development and the Spring ecosystem.</p>
             <p><i class="fa-regular fa-hand-point-right"></i> From my early experiences, I discovered my love for coding and problem-solving, and it didn't take long for me to realize that Java was the language that captivated me the most. Throughout my education and personal projects, I've honed my skills in Java development, familiarizing myself with core concepts, object-oriented programming, and best practices.</p>
             <p><i class="fa-regular fa-hand-point-right"></i>Collaboration is at the heart of my approach to development. I believe that great software is built through effective teamwork, communication, and a keen understanding of user needs. I enjoy working in diverse and dynamic environments, where I can learn from experienced professionals and contribute my own unique perspectives.</p>
-            <p class="hide_about"><i class="fa-regular fa-hand-point-right"></i>What sets me apart is my drive to continuously learn and improve. I keep myself up-to-date with the latest industry trends and emerging technologies, allowing me to stay on the cutting edge of Java development. I'm always eager to take on new challenges and expand my skill set to deliver top-notch solutions.</p>
-            <p class="hide_about"><i class="fa-regular fa-hand-point-right"></i>In addition to Java, I also have experience with related technologies like Spring Framework, Hibernate, and SQL databases. I'm well-versed in software development methodologies, such as Agile, and I have a solid understanding of version control systems like Git.</p>
-            <p class="hide_about"><i class="fa-regular fa-hand-point-right"></i>As I embark on this exciting journey, my goal is to make a meaningful impact by creating high-quality software that enhances user experiences and solves real-world problems. I'm eager to join a team where I can apply my skills, learn from talented individuals, and contribute to the development of innovative solutions.</p>
-            <p class="hide_about"><i class="fa-regular fa-hand-point-right"></i>Thank you for visiting my portfolio. I'm excited about the future possibilities, and I look forward to connecting with fellow developers, industry professionals, and potential collaborators. Let's build something incredible together!</p>
+            <div class="about_extra" id="about_extra" aria-hidden="true">
+                <div class="about_extra_content">
+                    <p><i class="fa-regular fa-hand-point-right"></i>What sets me apart is my drive to continuously learn and improve. I keep myself up-to-date with the latest industry trends and emerging technologies, allowing me to stay on the cutting edge of Java development. I'm always eager to take on new challenges and expand my skill set to deliver top-notch solutions.</p>
+                    <p><i class="fa-regular fa-hand-point-right"></i>My toolkit includes Spring Boot, Spring MVC, Spring Security, Spring Data JPA, REST APIs, React, MySQL, and Git.</p>
+                    <p><i class="fa-regular fa-hand-point-right"></i>As I embark on this exciting journey, my goal is to make a meaningful impact by creating high-quality software that enhances user experiences and solves real-world problems. I'm eager to join a team where I can apply my skills, learn from talented individuals, and contribute to the development of innovative solutions.</p>
+                    <p><i class="fa-regular fa-hand-point-right"></i>Thank you for visiting my portfolio. I'm excited about the future possibilities, and I look forward to connecting with fellow developers, industry professionals, and potential collaborators. Let's build something incredible together!</p>
+                </div>
+            </div>
             <div class="btn-box btns">
-                <a href="#about" class="btn read_more_btn">Read More</a>
+                <a href="#about_extra" class="btn read_more_btn" aria-expanded="false" aria-controls="about_extra">Read More</a>
             </div>
         </div>
-    </section>
+        </section>
 
-    <section class="education" id="education">
-        <h2 class="about_heading">My <span>Journey</span></h2>
+        <section class="education" id="education">
+        <h2 class="about_heading" data-reveal="up">My <span>Journey</span></h2>
 
         <div class="education-row">
-            <div class="education-column">
+            <div class="education-column" data-reveal="left">
                 <h3 class="title">Education</h3>
 
                 <div class="education_box">
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class="bx bxs-calendar"></i>2024 - Now</div>
-                            <h2>BTech In computer science Engineering</h2>
-                            <h4>Kashi Institute of technology</h4>
+                            <div class="year"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 2024 - Present</div>
+                            <h4>BTech in Computer Science Engineering</h4>
+                            <p class="education_institution">Kashi Institute of Technology</p>
                             <p>Mirzamurad Varanasi UP (221307)</p>
 
                         </div>
@@ -101,9 +104,9 @@
 
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class="bx bxs-calendar"></i>08/2023 - 02/24</div>
-                            <h2>Full Stack Web Development (Full time)</h2>
-                            <h4>Online(self study)</h4>                            
+                            <div class="year"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Aug 2023 - Feb 2024</div>
+                            <h4>Full Stack Web Development (Full-time)</h4>
+                            <p>Online self-study</p>
                         </div>
                     </div>
 
@@ -112,16 +115,16 @@
                 </div>
             </div>
 
-            <div class="education-column">
-                <h3 class="title">Education</h3>
+            <div class="education-column" data-reveal="right">
+                <h3 class="title">Earlier Education</h3>
 
                 <div class="education_box">
 
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class="bx bxs-calendar"></i>07/2020 – 07/2023</div>
-                            <h2>Diploma In Mechanical Engineering</h2>
-                            <h4>Government Polytechnic</h4>
+                            <div class="year"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Jul 2020 - Jul 2023</div>
+                            <h4>Diploma in Mechanical Engineering</h4>
+                            <p class="education_institution">Government Polytechnic</p>
                             <p>Sastri nagar Ghaziabad UP (201002)</p>
                             
                         </div>
@@ -130,157 +133,144 @@
 
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class="bx bxs-calendar"></i>07/2018 - 07/2020</div>
-                            <h3>Entermedeat</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid dignissimos hic ratione expedita illo animi repellendus modi, excepturi omnis </p>
+                            <div class="year"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Jul 2018 - Jul 2020</div>
+                            <h4>Intermediate Education</h4>
 
                         </div>
                     </div>
 
-                    <!-- <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class="bx bxs-calendar"></i>2017 - 2018</div>
-                            <h3>Master Degree - University</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid dignissimos hic ratione expedita illo animi repellendus modi, excepturi omnis ducimus dicta dolorem laborum eum maxime rem odit voluptas accusamus ut!</p>
-                            
-                        </div>
-                    </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class="bx bxs-calendar"></i>2017 - 2018</div>
-                            <h3>Master Degree - University</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid dignissimos hic ratione expedita illo animi repellendus modi, excepturi omnis ducimus dicta dolorem laborum eum maxime rem odit voluptas accusamus ut!</p>
-                            
-                        </div>
-                    </div> -->
-                    
                 </div>
             </div>
         </div>
-    </section>
+        </section>
 
-    <section class="skill" id="skill">
-        <h2 class="about_heading">My <span>Skills</span></h2>
+        <section class="skill" id="skill">
+        <h2 class="about_heading" data-reveal="up">My <span>Skills</span></h2>
 
         <div class="skill_row">
-            <div class="skill_column">
-                <h3 class="title">Coading Skill</h3>
+            <article class="skill_column" data-reveal="up">
+                <h3 class="title">Programming Languages</h3>
+                <ul class="skill_tags">
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                    <li>SQL</li>
+                </ul>
+            </article>
 
-                <div class="skill_box">
-                    <div class="skill_content">
-                        <div class="progress">
-                            <h3>HTML <span>75%</span></h3>
-                            <div class="bar"><span class="skill_bar"></span></div>
-                        </div>
+            <article class="skill_column" data-reveal="up">
+                <h3 class="title">Backend</h3>
+                <ul class="skill_tags">
+                    <li>Spring Boot</li>
+                    <li>Spring MVC</li>
+                    <li>Spring Security</li>
+                    <li>Spring Data JPA</li>
+                    <li>REST APIs</li>
+                </ul>
+            </article>
 
-                        <div class="progress">
-                            <h3>CSS <span>75%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+            <article class="skill_column" data-reveal="up">
+                <h3 class="title">Frontend</h3>
+                <ul class="skill_tags">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>React.js</li>
+                    <li>Thymeleaf</li>
+                    <li>React Native</li>
+                </ul>
+            </article>
 
-                        <div class="progress">
-                            <h3>JavaScript <span>60%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+            <article class="skill_column" data-reveal="up">
+                <h3 class="title">Tools & Technologies</h3>
+                <ul class="skill_tags">
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>Postman</li>
+                    <li>Swagger</li>
+                    <li>VS Code</li>
+                    <li>Eclipse</li>
+                </ul>
+            </article>
 
-                        <div class="progress">
-                            <h3>GitHub <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+            <article class="skill_column" data-reveal="up">
+                <h3 class="title">Database</h3>
+                <ul class="skill_tags">
+                    <li>MySQL</li>
+                </ul>
+            </article>
 
-                        <div class="progress">
-                            <h3>Swagger <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill_column">
-                <h3 class="title">Coading Skill</h3>
-
-                <div class="skill_box">
-                    <div class="skill_content">
-                        <div class="progress">
-                            <h3>Java <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Spring Framework <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>RESTful API <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>MySQL <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Postman <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <article class="skill_column" data-reveal="up">
+                <h3 class="title">Concepts</h3>
+                <ul class="skill_tags">
+                    <li>Object-Oriented Programming (OOP)</li>
+                    <li>Data Structures & Algorithms (DSA)</li>
+                    <li>DBMS</li>
+                    <li>MVC Architecture</li>
+                    <li>Authentication & Authorization</li>
+                    <li>Role-Based Access Control (RBAC)</li>
+                </ul>
+            </article>
         </div>
-    </section>
+        </section>
 
-<section class="contact" id="contact">
-        <h2 class="about_heading">Contact <span>Me!</span></h2>
+        <section class="contact" id="contact">
+        <h2 class="about_heading" data-reveal="up">Get in <span>Touch</span></h2>
 
-        <form action="">
-            <div class="input_box">
-                <div class="input_field">
-                    <input type="text" placeholder="Full name">
-                    <span class="focus"></span>
-                </div>
+        <div class="contact_layout">
+            <div class="contact_info" data-reveal="left">
+                <h3>Let's work together</h3>
+                <p>Have a project, opportunity, or question? Send me a message or connect through one of these channels.</p>
 
-                <div class="input_field">
-                    <input type="text" placeholder="Email Subject">
-                    <span class="focus"></span>
-                </div>
-
-                <div class="input_field">
-                    <input type="number" placeholder="Mobile Number">
-                    <span class="focus"></span>
-                </div>
-
-                <div class="input_field">
-                    <input type="text" placeholder="Email Subject">
-                    <span class="focus"></span>
-                </div>
-
+                <a class="contact_link" href="mailto:123saktisingh@gmail.com">
+                    <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                    <span>123saktisingh@gmail.com</span>
+                </a>
+                <a class="contact_link" href="https://wa.me/918934886808" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a class="contact_link" href="https://github.com/Sunnysingh1231" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span>GitHub</span>
+                </a>
             </div>
 
-            <div class="text_area">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Massage" required></textarea>
-                <span class="focus text_area_focus"></span>
-            </div>
+            <form class="contact_form" id="contact_form" action="mailto:123saktisingh@gmail.com" method="post" enctype="text/plain" aria-describedby="contact_form_note" data-reveal="right">
+                <div class="contact_fields">
+                    <div class="contact_field">
+                        <label for="contact_name">Your name</label>
+                        <input id="contact_name" name="name" type="text" autocomplete="name" placeholder="Sunny Dev" required>
+                    </div>
+                    <div class="contact_field">
+                        <label for="contact_email">Email address</label>
+                        <input id="contact_email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="contact_field contact_field_full">
+                        <label for="contact_subject">Subject</label>
+                        <input id="contact_subject" name="subject" type="text" placeholder="How can I help?" required>
+                    </div>
+                    <div class="contact_field contact_field_full">
+                        <label for="contact_message">Message</label>
+                        <textarea id="contact_message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+                    </div>
+                </div>
 
-            <div class="btn-box btns">
-                <button type="submit" class="btn-box btns">Submit</button>
-            </div>
-        </form>
-    </section>
+                <div class="contact_form_footer">
+                    <p id="contact_form_note">Submitting opens your default email app with your message ready to send.</p>
+                    <button type="submit">Prepare email <i class="fa-regular fa-paper-plane" aria-hidden="true"></i></button>
+                </div>
+            </form>
+        </div>
+        </section>
+    </main>
 
-    <footer class="footer">
+    <footer class="footer" data-reveal="up">
         <div class="footer_text">
-            <p>Copyright &copy; 2024 by ....... | All Rights Reserved.</p>
+            <p>Copyright &copy; <span id="current_year">2026</span> Sunny Dev | All Rights Reserved.</p>
         </div>
     </footer>
 
 
+    <script src="https://kit.fontawesome.com/077692c7b0.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-<script src="index.js"></script>
-<script src="https://kit.fontawesome.com/077692c7b0.js" crossorigin="anonymous"></script>
 </html>
